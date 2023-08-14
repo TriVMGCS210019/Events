@@ -1,0 +1,12 @@
+﻿@model Events.Models.Event
+<div class="col-md-4">
+    <div class="event-box">
+        <h2>@Model.Name</h2>
+        <span class="date">@Model.Start</span>
+        @if (Model.Author != null)
+        {
+            <div class="author">@Model.Author.Fullname @Model.Author.Email</div>
+        }
+    <div class="author">@Model.Location</div>
+    </div>
+</div>
